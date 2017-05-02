@@ -19,78 +19,78 @@ public class Fragment1 extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_attach);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_attach);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_create);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_create);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_create_view);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_create_view);
+        Messager.sendOnlyToLogs(message);
         return inflater.inflate(R.layout.fragment_1, null);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_activity_created);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_activity_created);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_start);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_start);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_resume);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_resume);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_pause);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_pause);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_stop);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_stop);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_destroy_view);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_destroy_view);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_destroy);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_destroy);
+        Messager.sendOnlyToLogs(message);
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        message = getString(R.string.the_fragment_1) + getString(R.string.on_detach);
-        Messager.sendToAllRecipients(this.getContext(), message);
+        message = getString(R.string.the_fragment_1) + " " + getString(R.string.on_detach);
+        Messager.sendOnlyToLogs(message);
     }
 }
